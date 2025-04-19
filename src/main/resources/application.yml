@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: stp-1-of-ai
+
+  ai:
+    dashscope:
+      api-key: ${DASHSCOPE_APIKEY}
