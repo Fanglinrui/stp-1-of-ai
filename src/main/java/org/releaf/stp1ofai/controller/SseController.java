@@ -1,5 +1,6 @@
 package org.releaf.stp1ofai.controller;
 
+import jakarta.servlet.http.HttpServletResponse;
 import org.releaf.stp1ofai.service.MessageProcesser;
 import org.springframework.http.MediaType;
 import org.springframework.http.codec.ServerSentEvent;
@@ -49,4 +50,5 @@ public class SseController {
                         .build());
 
     }
+
 }
