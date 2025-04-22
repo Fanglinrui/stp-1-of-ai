@@ -48,7 +48,7 @@ public class HelloworldController {
         return chatClient.prompt(query).stream().content();
     }
 
-
+    // 在使用 Chat Memory 时，需要指定对话 ID，以便 Spring AI 处理上下文。
     @GetMapping("/advisor/chat/{id}")
     public Flux<String> advisorChat(
             HttpServletResponse response,
